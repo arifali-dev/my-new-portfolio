@@ -1,3 +1,87 @@
-.main_div {
-    background-color: #0E1116;
+.navbar-brand {
+    font-size: 30px;
+}
+
+/* Navbar */
+.custom-navbar {
+    /* background: rgba(0, 0, 0, 0.7); */
+    backdrop-filter: blur(10px);
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 20vh;
+    /* background: radial-gradient(circle at top, #1a1a1a, #000); */
+    color: white;
+    padding-top: 120px;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-title span {
+    color: #3b82f6;
+}
+
+.hero-text {
+    max-width: 600px;
+    color: #cbd5e1;
+    font-size: 1.1rem;
+}
+
+
+
+
+/* Section Title */
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+/* Skills Section */
+.skills-section {
+    /* background: #000; */
+    padding: 80px 0;
+}
+
+/* Skill Card */
+
+
+.skill-card {
+    background: #1A1D22;
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+}
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.5));
+}
+
+.skill-name {
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .skill-icon {
+        width: 48px;
+        height: 48px;
+    }
 }
