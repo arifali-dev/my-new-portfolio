@@ -56,7 +56,7 @@ export default function Home() {
                   href="/resume/Arif-Ali-Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-outline-light btn-lg  text-white mt-2 mt-sm-0"
+                  className="btn btn-outline-light btn-lg  text-white resume-btn"
                 >
                   Download Resume
                   {/* <Image

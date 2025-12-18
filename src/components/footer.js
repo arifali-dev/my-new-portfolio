@@ -16,33 +16,33 @@ export default function Footer() {
                     </div>
 
                     {/* CENTER - SOCIAL LINKS */}
-                    <div className="col-md-4 mb-3 mb-md-0 text-center">
+                    <div className="col-md-6 mb-3 mb-md-0 text-center">
                         <div className="social-links">
-                            <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank">
-                                <Image src="/social/linkedin.svg" alt="LinkedIn" width={28} height={28} />
+                            <a href="https://www.linkedin.com/in/arif-ali97" target="_blank">
+                                <Image src="/social/linkedin-news.png" alt="LinkedIn" width={25} height={25} />
                             </a>
 
-                            <a href="https://github.com/YOUR_USERNAME" target="_blank">
+                            <a href="https://github.com/arifali-dev" target="_blank">
                                 <Image src="/social/git-icon.svg" alt="github" width={28} height={28} />
                             </a>
 
-                            <a href="https://twitter.com/YOUR_USERNAME" target="_blank">
+                            <a href="https://twitter.com/arifali74962" target="_blank">
                                 <Image src="/social/twitter.svg" alt="LinkedIn" width={28} height={28} />
                             </a>
 
-                            <a href="https://instagram.com/YOUR_USERNAME" target="_blank">
+                            <a href="https://instagram.com/arif_m_ali" target="_blank">
                                 <Image src="/social/instagram.svg" alt="LinkedIn" width={28} height={28} />
                             </a>
 
-                            <a href="https://facebook.com/YOUR_USERNAME" target="_blank">
-                                <Image src="/social/facebook.svg" alt="LinkedIn" width={28} height={28} />
+                            <a href="https://facebook.com/" target="_blank">
+                                <Image src="/social/facebook-new.png" alt="LinkedIn" width={28} height={28} />
                             </a>
                         </div>
                     </div>
 
 
                     {/* RIGHT - COPYRIGHT */}
-                    <div className="col-md-4 text-center text-md-end">
+                    <div className="col-md-2 text-center text-md-end">
                         <p className="footer-copy">
                             © {new Date().getFullYear()} Arif Ali
                         </p>
