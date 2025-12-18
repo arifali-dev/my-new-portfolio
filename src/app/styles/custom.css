@@ -16,6 +16,12 @@
     padding-top: 120px;
 }
 
+.contact_header {
+    min-height: 10vh;
+    /* background: radial-gradient(circle at top, #1a1a1a, #000); */
+    color: white;
+}
+
 .hero-title {
     font-size: 3rem;
     font-weight: 700;
@@ -201,9 +207,52 @@
     font-size: 0.9rem;
 }
 
+/* App layout for sticky footer */
+.app-layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Push footer to bottom */
+.content {
+    flex: 1;
+}
+
 @media (max-width: 388px) {
     .resume-btn {
         margin-top: 0.5rem;
         /* same as mt-2 */
     }
+}
+
+
+.contact-section {
+    padding: 120px 0 80px;
+    color: white;
+}
+
+.contact-subtext {
+    color: #94a3b8;
+    font-size: 1.05rem;
+}
+
+.contact-form {
+    background: #1a1d22;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.contact-info {
+    color: #cbd5e1;
+}
+
+.contact-info a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
