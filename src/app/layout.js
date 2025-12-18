@@ -2,7 +2,11 @@ import { Geist, Geist_Mono } from "next/font/google";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+
 import "./styles/custom.css"
+import Script from "next/script";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,6 +29,11 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Navbar />
         {children}
+        <Script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          strategy="beforeInteractive"
+        />
+        <Footer />
       </body>
     </html>
   );

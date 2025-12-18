@@ -52,9 +52,30 @@ export default function Home() {
                 <a href="/contact" className="btn btn-primary btn-lg me-3">
                   Get In Touch
                 </a>
-                <a href="/projects" className="btn btn-outline-light btn-lg">
-                  View Projects
+                <a
+                  href="/resume/Arif-Ali-Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-outline-light btn-lg  text-white mt-2 mt-sm-0"
+                >
+                  Download Resume
+                  {/* <Image
+                    src="/resume/download-icon.png"
+                    alt="Arif Ali"
+                    width={24}
+                    height={24}
+                    className=""
+                  /> */}
                 </a>
+
+                {/* <a
+                  href="/resume/Arif-Ali-Resume.pdf"
+                  download
+                  className="btn btn-outline-light btn-lg"
+                >
+                  Download Resume
+                </a> */}
+
               </div>
             </div>
           </div>
