@@ -18,7 +18,7 @@ export default function Projects() {
             description:
                 "My personal portfolio website showcasing my skills, professional experience, and projects with a modern UI and responsive design.",
             tech: "HTML, CSS, Javascript,NextJs, React.js,  Bootstrap, Performance Optimization",
-            live: "https://your-vercel-url.vercel.app",
+            live: "https://my-new-portfolio-eight-psi.vercel.app/",
             github: "https://github.com/arifali-dev/my-new-portfolio",
         },
     ];
