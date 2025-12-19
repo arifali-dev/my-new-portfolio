@@ -1,26 +1,8 @@
 "use client";
-import { useEffect } from "react";
+import useRevealAnimation from "../../hooks/useAnimation";
 
 export default function About() {
-
-    useEffect(() => {
-        const elements = document.querySelectorAll(".reveal");
-
-        const observer = new IntersectionObserver(
-            (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("active");
-                    }
-                });
-            },
-            { threshold: 0.15 }
-        );
-
-        elements.forEach((el) => observer.observe(el));
-
-        return () => observer.disconnect();
-    }, []);
+    useRevealAnimation();
 
     return (
         <section className="about-section py-5 text-white">

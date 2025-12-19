@@ -1,4 +1,9 @@
+"use client";
+import useRevealAnimation from "../../hooks/useAnimation";
+
 export default function Projects() {
+    useRevealAnimation();
+
     const projects = [
         {
             title: "Coinpedia (Professional Project)",
@@ -23,7 +28,7 @@ export default function Projects() {
             <div className="container mt-5">
 
                 {/* HEADER */}
-                <div className="text-center mb-5">
+                <div className="text-center mb-5  reveal">
                     <h1 className="section-title">Projects</h1>
                     <p className="projects-subtitle mt-2">
                         Professional and personal projects I’ve worked on during my 3.5 years of experience.
@@ -31,7 +36,7 @@ export default function Projects() {
                 </div>
 
                 {/* PROJECT CARDS */}
-                <div className="row justify-content-center g-4">
+                <div className="row justify-content-center g-4 reveal">
                     {projects.map((project, index) => (
                         <div className="col-md-6 col-lg-5" key={index}>
                             <div className="project-card h-100">

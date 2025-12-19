@@ -17,7 +17,31 @@ import styles from "./page.module.css";
 //   );
 // }
 
+
+// import { useEffect } from "react";
+
 export default function Home() {
+
+
+  // useEffect(() => {
+  //   const elements = document.querySelectorAll(".reveal");
+
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           entry.target.classList.add("active");
+  //         }
+  //       });
+  //     },
+  //     { threshold: 0.15 }
+  //   );
+
+  //   elements.forEach((el) => observer.observe(el));
+
+  //   return () => observer.disconnect();
+  // }, []);
+
   const skills = [
     { name: "HTML", img: "/skills/html-icon.svg" },
     { name: "CSS", img: "/skills/css-icon.svg" },

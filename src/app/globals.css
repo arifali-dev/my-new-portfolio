@@ -44,3 +44,31 @@ a {
     color-scheme: dark;
   }
 }
+
+
+/* Base reveal state */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: all 0.7s ease-out;
+}
+
+/* Active reveal */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional variants */
+.reveal-left {
+  transform: translateX(-30px);
+}
+
+.reveal-right {
+  transform: translateX(30px);
+}
+
+.reveal.active.reveal-left,
+.reveal.active.reveal-right {
+  transform: translateX(0);
+}

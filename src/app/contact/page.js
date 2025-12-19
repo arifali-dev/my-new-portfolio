@@ -1,16 +1,17 @@
 "use client";
+import useRevealAnimation from "../../hooks/useAnimation";
 import { useState } from "react";
 
 export default function Contact() {
     const [status, setStatus] = useState("");
-
+    useRevealAnimation();
     return (
         <section className="contact-section">
             <div className="container">
                 <div className="contact-wrapper">
 
                     {/* LEFT */}
-                    <div className="contact-left">
+                    <div className="contact-left reveal reveal-left">
                         <h2 className="text-white">Let’s work together</h2>
                         <p>
                             I’m open to full-time roles, freelance projects, and collaborations.
@@ -24,7 +25,7 @@ export default function Contact() {
                     </div>
 
                     {/* RIGHT */}
-                    <div className="contact-right">
+                    <div className="contact-right reveal reveal-right">
                         <form className="contact-form">
                             <input type="text" placeholder="Your Name" required />
                             <input type="email" placeholder="Email Address" required />
