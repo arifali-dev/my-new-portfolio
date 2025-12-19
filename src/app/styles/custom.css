@@ -2,13 +2,13 @@
     font-size: 30px;
 }
 
-/* Navbar */
+
 .custom-navbar {
     /* background: rgba(0, 0, 0, 0.7); */
     backdrop-filter: blur(10px);
 }
 
-/* Hero Section */
+
 .hero-section {
     min-height: 20vh;
     /* background: radial-gradient(circle at top, #1a1a1a, #000); */
@@ -16,11 +16,7 @@
     padding-top: 120px;
 }
 
-.contact_header {
-    min-height: 10vh;
-    /* background: radial-gradient(circle at top, #1a1a1a, #000); */
-    color: white;
-}
+
 
 .hero-title {
     font-size: 3rem;
@@ -40,20 +36,19 @@
 
 
 
-/* Section Title */
 .section-title {
     font-size: 2.2rem;
     font-weight: 700;
     color: white;
 }
 
-/* Skills Section */
+
 .skills-section {
     /* background: #000; */
     padding: 80px 0;
 }
 
-/* Skill Card */
+
 
 
 .skill-card {
@@ -84,7 +79,7 @@
     font-size: 1.1rem;
 }
 
-/* Mobile */
+
 @media (max-width: 576px) {
     .skill-icon {
         width: 48px;
@@ -92,13 +87,8 @@
     }
 }
 
-/* Slide-down animation */
 
 
-
-
-
-/* Active route highlight */
 .nav-link {
     position: relative;
     font-weight: 500;
@@ -119,7 +109,7 @@
 }
 
 
-/* Profile thumbnail */
+
 .profile-thumb {
     border-radius: 50%;
     cursor: pointer;
@@ -127,7 +117,7 @@
     border: 2px solid #0d6efd;
 }
 
-/* Fullscreen modal */
+
 .profile-modal {
     position: fixed;
     inset: 0;
@@ -138,12 +128,12 @@
     z-index: 9999;
 }
 
-/* Modal content */
+
 .profile-modal-content {
     position: relative;
 }
 
-/* Large image */
+
 .profile-large {
     border-radius: 50%;
     max-width: 80vw;
@@ -151,7 +141,7 @@
     object-fit: cover;
 }
 
-/* Close button */
+
 .close-btn {
     position: absolute;
     top: -10px;
@@ -167,7 +157,7 @@
 }
 
 
-/* Footer */
+
 .footer {
     background: #0b0e14;
     padding: 40px 0;
@@ -207,14 +197,14 @@
     font-size: 0.9rem;
 }
 
-/* App layout for sticky footer */
+
 .app-layout {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-/* Push footer to bottom */
+
 .content {
     flex: 1;
 }
@@ -222,37 +212,83 @@
 @media (max-width: 388px) {
     .resume-btn {
         margin-top: 0.5rem;
-        /* same as mt-2 */
+
     }
 }
 
 
 .contact-section {
-    padding: 120px 0 80px;
-    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
-.contact-subtext {
-    color: #94a3b8;
-    font-size: 1.05rem;
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(14px);
+    padding: 60px;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
 }
 
-.contact-form {
-    background: #1a1d22;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+@media(max-width:768px) {
+    .contact-wrapper {
+        margin-top: 100px;
+    }
 }
 
-.contact-info {
+.contact-left h2 {
+    font-size: 2.4rem;
+    margin-bottom: 16px;
+}
+
+.contact-left p {
     color: #cbd5e1;
+    line-height: 1.6;
 }
 
-.contact-info a {
-    color: #0d6efd;
-    text-decoration: none;
+.contact-meta p {
+    margin-top: 12px;
 }
 
-.contact-info a:hover {
-    text-decoration: underline;
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    padding: 14px;
+    border-radius: 12px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+.contact-form button {
+    background: #3b82f6;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: 600;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #2563eb;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
 }

@@ -1,0 +1,133 @@
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-section {
+    min-height: 100vh;
+    margin-top: 100px;
+}
+
+@media(max-width:768px) {
+    .about-section {
+        margin-top: 50px;
+    }
+}
+
+/* Header */
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Fix mobile side spacing */
+@media (max-width: 576px) {
+    .about-section .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .about-section .col-lg-10 {
+        padding: 20px;
+        border-radius: 14px;
+    }
+}
+
+
+.about-intro {
+    max-width: 720px;
+    margin: 0 auto;
+    color: #cbd5f5;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Content Wrapper */
+.about-section .col-lg-10 {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Headings */
+.about-heading {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.about-heading::before {
+    content: "";
+    position: absolute;
+    left: -14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background: #3b82f6;
+    border-radius: 50%;
+}
+
+/* Text */
+.about-text {
+    color: #cbd5f5;
+    line-height: 1.9;
+    font-size: 1rem;
+}
+
+/* List */
+.about-list {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.about-list li {
+    color: #cbd5f5;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.about-list li::marker {
+    color: #3b82f6;
+}
+
+/* Availability icons */
+.about-text span {
+    color: #60a5fa;
+}
+
+/* =========================
+     SCROLL ANIMATIONS
+  ========================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+     MOBILE OPTIMIZATION
+  ========================= */
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .about-section .col-lg-10 {
+        padding: 25px;
+    }
+
+    .about-heading::before {
+        left: -10px;
+    }
+}

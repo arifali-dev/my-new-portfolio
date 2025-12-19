@@ -1,58 +1,37 @@
+"use client";
+import { useState } from "react";
+
 export default function Contact() {
+    const [status, setStatus] = useState("");
+
     return (
         <section className="contact-section">
             <div className="container">
-                <div className="row justify-content-center">
+                <div className="contact-wrapper">
 
-                    {/* HEADER */}
-                    <div className="col-md-8 text-center mb-5 contact_header">
-                        <h1 className="section-title">Get In Touch</h1>
-                        <p className="contact-subtext">
-                            Have a project, question, or just want to say hi? I’d love to hear from you.
+                    {/* LEFT */}
+                    <div className="contact-left">
+                        <h2 className="text-white">Let’s work together</h2>
+                        <p>
+                            I’m open to full-time roles, freelance projects, and collaborations.
+                            Fill out the form and I’ll get back to you within 24–48 hours.
                         </p>
-                    </div>
 
-                    {/* FORM */}
-                    <div className="col-lg-6 mb-5">
-                        <form className="contact-form">
-                            <div className="form-group mb-4">
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="Your Name"
-                                />
-                            </div>
-
-                            <div className="form-group mb-4">
-                                <input
-                                    type="email"
-                                    className="form-control"
-                                    placeholder="you@example.com"
-                                />
-                            </div>
-
-                            <div className="form-group mb-4">
-                                <textarea
-                                    className="form-control"
-                                    rows="5"
-                                    placeholder="Tell me about your project..."
-                                ></textarea>
-                            </div>
-
-                            <button className="btn btn-primary w-100">
-                                Send Message
-                            </button>
-                        </form>
-                    </div>
-
-                    {/* CONTACT INFO */}
-                    <div className="col-lg-5 mt-5 mt-lg-0">
-                        <div className="contact-info">
-                            <h5>Contact Details</h5>
-                            <p>📧 <a href="mailto:arif74962786@email.com">arif74962786@email.com</a></p>
+                        <div className="contact-meta">
+                            <p>📧 arif74962786@email.com</p>
                             <p>📍 India</p>
-                            <p className="mt-3">Open to full-time roles, freelance & collaborations.</p>
                         </div>
+                    </div>
+
+                    {/* RIGHT */}
+                    <div className="contact-right">
+                        <form className="contact-form">
+                            <input type="text" placeholder="Your Name" required />
+                            <input type="email" placeholder="Email Address" required />
+                            <textarea rows="5" placeholder="Tell me about your project..." required />
+                            <button type="submit">Send Message</button>
+                            {status && <p className="form-status">{status}</p>}
+                        </form>
                     </div>
 
                 </div>
